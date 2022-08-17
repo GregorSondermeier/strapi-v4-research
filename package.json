@@ -17,7 +17,9 @@
     "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Gregor Sondermeier",
+    "email": "gregor.sondermeier.github@gmail.com",
+    "url": "https://github.com/GregorSondermeier"
   },
   "strapi": {
     "uuid": "85973fd5-9a29-45b9-9711-6d34bc4ca4b9"
