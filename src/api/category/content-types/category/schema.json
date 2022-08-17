@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "categories",
   "info": {
-    "singularName": "restaurant",
-    "pluralName": "restaurants",
-    "displayName": "Restaurant",
-    "description": ""
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Category"
   },
   "options": {
     "draftAndPublish": true
@@ -26,19 +25,11 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
-    },
-    "categories": {
+    "restaurants": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "restaurants"
+      "target": "api::restaurant.restaurant",
+      "inversedBy": "categories"
     }
   }
 }
